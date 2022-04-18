@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main>
+        <form>
+
+            <div class="group">
+                <div>
+                    <label for="name">Name:</label>
+                </div>
+                <div>
+                    <input id="name" type="text" name="name" placeholder="Full name" />
+                </div>
+            </div>
+
+            <div class="group">
+                <div>
+                    <label for="email">Email:</label>
+                </div>
+                <div>
+                    <input id="email" type="email" name="email" required placeholder="Email address" />
+                </div>
+            </div>
+
+            <div class="group">
+                <div>
+                    <label for="form-message">Your message:</label>
+                </div>
+                <div>
+                    <textarea id="form-message" name="message" autofocus="on" required maxlength="200" />
+                    </textarea>
+                </div>
+            </div>
+
+            <button class="group" type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+
+</html>
